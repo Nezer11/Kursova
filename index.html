@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBoard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/element.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="headwrapper">
+        <div class="sitename">
+            <b>SkyBoard</b> <span class="create" onclick="modifyModalToCreate()"> Створити білет</span>
+            <button class="blue-button" onclick="openRegistrationModal()">Регістрація</button>
+            <button class="blue-button" onclick="openPassengersModal()">Пасажири</button>
+        </div>
+        <div class="searchzonewrapper">
+            <div><input type="search" id="csearch" class="searchfield" placeholder="Пошук вашого білета..."/></div>
+            <div><button class="blue-button" id="searchbtn">Пошук</button></div>
+            <div><button class="red-button" id="cancelbtn">Відміна</button></div>
+        </div>
+    </div>
+    <div class="workspace">
+        <div class="managezone">
+            <div>
+                <h4>Керування білетами</h4>
+            </div>
+            <div>
+                <div class="switchwrapper">
+                    <div>Сортування за сумою</div> 
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox" id="sortcheckbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="ta-center">
+                <p id="countresult"></p>
+            </div>
+            <div class="ta-center">
+                <button class="green-button" id="preparebn" onclick="prepare()"> Заготовлені білети </button>
+            </div>
+        </div> 
+        <div class="displayzone">
+          
+            <!-- <div class="element">1</div> -->
+            
+        </div> 
+    </div>
+</div>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+<script src="scr/base.js"></script>
+<script src="scr/modal.js"></script>
+<script src="scr/prepare.js"></script>
+<script src="scr/index.js"></script>
+<script src="scr/element.js"></script>
+<script src="scr/sort_searh.js"></script>
+</body>
+</html>

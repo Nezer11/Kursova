@@ -1,0 +1,157 @@
+.cmodal {}
+
+.cmodal.open .modal-overlay,
+.cmodal.open .modal-window {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.cmodal.hide .modal-overlay,
+.cmodal.hide .modal-window {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.cmodal.open  .modal-window {
+    transform: translateY(100px);
+}
+
+.cmodal.open .modal-overlay{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.cmodal.hide  .modal-window {
+    transform: translateY(-200px);
+}
+
+.cmodal.hide .modal-overlay{
+    background: rgba(0, 0, 0, 0);
+}
+
+
+.modal-window, .modal-overlay{
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal-overlay  {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.2s ease-in;
+}
+
+.modal-window{
+    width: 600px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 0 auto; 
+    transform: translateY(-200px);
+    transition: transform 0.2s ease-in;
+    
+}
+
+.modal-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(211, 211, 211);
+    /* background-color: rgb(197, 197, 197); */
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: #2196F3;
+}
+
+.modal-close {
+    background-color: rgb(221, 221, 221);
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: rgb(197, 197, 197);
+    border: 1px solid rgb(160, 160, 160);
+}
+.modal-body{
+    padding: 10px 10px;
+}
+
+.modal-form {
+    text-align: center;
+}
+
+.modal-form-field {
+    margin: 0 auto;
+    padding: 0 3px;
+    height: 36px;
+    width: 350px;
+}
+
+input[type="file"] {
+    border: 1px solid #ccc;
+    display: inline-block;
+    height: 36px;
+    width: 330px;
+    padding: 6px 12px;
+}
+
+input[type="text"] {
+    margin: 3px auto;
+    border: 1px solid #cccccc; /*Колір рамки*/
+    border-radius: 3px; /*заокруглення кутиків (общее)*/
+    -webkit-border-radius: 3px; /*заокруглення кутиків (Google Chrome)*/
+    -moz-border-radius: 3px; /*заокруглення кутиків (FireFox)*/
+    -khtml-border-radius: 3px; /*заокруглення кутиків (Safari)*/
+    background: #ffffff !important; /* бажано прописувати, оскільки в Chrome при збереженні данных може бути жовтим*/
+    outline: none; /* видаляє обводку в браузерах хром(желтая) и сафари(синяя)*/
+    height: 36px; /* висота на свое усмотрение*/
+    width: 350px; /* ширина на свое усмотрение*/
+    color: #7a7a7a; /*колір шрифта в звичайному стані*/
+    font-size: 0.9rem; /* розмір шрифта*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Стиль шрифта*/
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #6aaaff;
+    box-shadow: 2px 2px 2px #9cc9e6; 
+}
+
+input[type="number"] {
+    margin: 3px auto;
+    border: 1px solid #cccccc; /*Колір рамки*/
+    border-radius: 3px; /*заокруглення кутиків (общее)*/
+    -webkit-border-radius: 3px; /*заокруглення кутиків (Google Chrome)*/
+    -moz-border-radius: 3px; /*заокруглення кутиків (FireFox)*/
+    -khtml-border-radius: 3px; /*заокруглення кутиків (Safari)*/
+    background: #ffffff !important; /* бажано прописувати, оскільки в Chrome при збереженні данных може бути жовтим*/
+    outline: none; /* видаляє обводку в браузерах хром(желтая) и сафари(синяя)*/
+    height: 36px; /* висота на свое усмотрение*/
+    width: 350px; /* ширина на свое усмотрение*/
+    color: #7a7a7a; /*колір шрифта в звичайному стані*/
+    font-size: 0.9rem; /* розмір шрифта*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Стиль шрифта*/
+    text-align: center;
+}
+
+input[type="number"]:focus {
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #6aaaff;
+    box-shadow: 2px 2px 2px #9cc9e6; 
+}
+
+#imgprev {
+    width: 100px;
+    height: 100px;
+}
+

@@ -1,0 +1,42 @@
+.element {
+    background-color: #ffffff; /* Сучасний білий фон */
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    border: none; /* Відсутність рамок */
+    border-radius: 15px; /* Більш круглі кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Додавання тіні */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.element:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.element-img {
+    width: 240px;
+    height: 240px;
+    margin: 10px auto;
+    border-radius: 15px; /* Круглі кути для зображення */
+}
+
+.element-data {
+    text-align: center;
+}
+
+.element-name {
+    font-size: 1em; /* Збільшення шрифту */
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.element-text {
+    font-size: 1em; /* Збільшення шрифту */
+    padding-bottom: 5px;
+}
+
+.element-footer {
+    display: flex;
+    justify-content: center;
+}
